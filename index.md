@@ -20,7 +20,7 @@ My final milestone is the increased reliability and accuracy of my robot. I amel
 # First Milestone
 My first milestone was building and screwing in everypart of the robot arm. The screws were hard to screw in, because it was a nut that you had to screw them into. One thing I had to do was use one hand to hold the part and the wrench, one hand to hold the screwdriver. But first I searched up all of the instructions and how to assemble. So I started to assemble, partially through the build, I realized that I was using the wrong screws so I had to go back and fix it. The most fun part was assembling the wires for me, and the most challenging part was screwing the screws to make it. 
 
-[![First Milestone](https://i3.ytimg.com/vi/zhDsSFFK8V4/maxresdefault.jpg)](https://www.youtube.com/watch?v=zhDsSFFK8V4 "First Milestone"){:target="_blank" rel="noopener"}
+[![First Milestone](https://i3.ytimg.com/vi/zhDsSFFK8V4/maxresdefault.jpg)](https://www.youtube.com/watch?v=zhDsSFFK8V4 "First Milestone")
 
 # Starter Project
 My starter project was making a TV-B-Gone with this device you can rurn off almost any TV. first I read the instructions and learned how to solder. Then I followed the instructions, and started to solder each component one by one on to the chip. First I added the button, then the resisters, the lights, the chip, and the battery pack. All of these things weren't very difficult to solder, but they were time consuming. The hardest part of this for me was where I had to solder the wires of the battery pack so they didn't fray.
