@@ -3,7 +3,7 @@ This will serve as a brief description of your project. Limit this to three sent
 
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
-| Devin Patel | Irvington | Software Engineering | Incoming Sophomore
+| Devin Patel | Irvington High | Software Engineering | Incoming Sophomore
 
 ![Headstone Image](https://lh3.googleusercontent.com/pw/AM-JKLXHy7l92EenVF6TmY1S3o1XdQ5sxtAAb690L4F2ukvAbNMUkFQtrjVnKmvbgkX0qLdNRzwl2lzuqvXLLqjDpKZNYMZz9lvvr57GtRPHdTAgDmcpdet6MKMgA4EgKO_ABQRLI3q15VAyjKvYSkJ34830=s1578-no?authuser=0)
   
