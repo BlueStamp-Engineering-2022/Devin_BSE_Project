@@ -25,4 +25,4 @@ My first milestone was setting up and hooking up the Raspberry Pi and all the ne
 # Starter Project
 My starter project was making a TV-B-Gone with this device you can rurn off almost any TV. first I read the instructions and learned how to solder. Then I followed the instructions, and started to solder each component one by one on to the chip. First I added the button, then the resisters, the lights, the chip, and the battery pack. All of these things weren't very difficult to solder, but they were time consuming. The hardest part of this for me was where I had to solder the wires of the battery pack so they didn't fray.
 
-  [![Starter Project](https://i3.ytimg.com/vi/kWjVllD65a4/maxresdefault.jpg)](https://www.youtube.com/watch?v=kWjVllD65a4 "Starter Project")
+ [![Starter Project](https://i3.ytimg.com/vi/kWjVllD65a4/maxresdefault.jpg)](https://www.youtube.com/watch?v=kWjVllD65a4 "Starter Project")
