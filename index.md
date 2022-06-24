@@ -1,6 +1,6 @@
 ﻿# Phone Controlled Robot Arm
-My project is a robot arm that I built. This robot arm is able to move around in many different ways to make it reach a point. This robot arm is very
-useful, because it can be used wirelessly from a bluetooth pin to make it easier to use and increase the range of the controller.
+The project that I have been building is a phone controlled robot arm. This robot arm is able to move around in many different ways to make it reach a point. This robot arm is very
+useful, because it can be used wirelessly controlled using bluetooth.
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
 | Devin Patel | Irvington High School | Software Engineering | Incoming Sophomore
@@ -10,12 +10,12 @@ useful, because it can be used wirelessly from a bluetooth pin to make it easier
 # Final Milestone
 My final milestone is the increased reliability and accuracy of my robot. I ameliorated the sagging and fixed the reliability of the finger. As discussed in my second milestone, the arm sags because of weight. I put in a block of wood at the base to hold up the upper arm; this has reverberating positive effects throughout the arm. I also realized that the forearm was getting disconnected from the elbow servo’s horn because of the weight stress on the joint. Now, I make sure to constantly tighten the screws at that joint. 
 
-[![Final Milestone](https://res.cloudinary.com/marcomontalbano/image/upload/v1612573869/video_to_markdown/images/youtube--F7M7imOVGug-c05b58ac6eb4c4700831b2b3070cd403.jpg )](https://www.youtube.com/watch?v=F7M7imOVGug&feature=emb_logo "Final Milestone"){:target="_blank" rel="noopener"}
+[![Final Milestone](https://res.cloudinary.com/marcomontalbano/image/upload/v1612573869/video_to_markdown/images/youtube--F7M7imOVGug-c05b58ac6eb4c4700831b2b3070cd403.jpg )](https://www.youtube.com/watch?v=F7M7imOVGug&feature=emb_logo "Final Milestone")
 
 # Second Milestone
 My final milestone is the increased reliability and accuracy of my robot. I ameliorated the sagging and fixed the reliability of the finger. As discussed in my second milestone, the arm sags because of weight. I put in a block of wood at the base to hold up the upper arm; this has reverberating positive effects throughout the arm. I also realized that the forearm was getting disconnected from the elbow servo’s horn because of the weight stress on the joint. Now, I make sure to constantly tighten the screws at that joint.
 
-[![Second Milestone](https://res.cloudinary.com/marcomontalbano/image/upload/v1612574014/video_to_markdown/images/youtube--y3VAmNlER5Y-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=y3VAmNlER5Y&feature=emb_logo "Second Milestone"){:target="_blank" rel="noopener"}
+[![Second Milestone](https://res.cloudinary.com/marcomontalbano/image/upload/v1612574014/video_to_markdown/images/youtube--y3VAmNlER5Y-c05b58ac6eb4c4700831b2b3070cd403.jpg)](https://www.youtube.com/watch?v=y3VAmNlER5Y&feature=emb_logo "Second Milestone")
 
 # First Milestone
 My first milestone was building and screwing in everypart of the robot arm. The screws were hard to screw in, because it was a nut that you had to screw them into. One thing I had to do was use one hand to hold the part and the wrench, one hand to hold the screwdriver. But first I searched up all of the instructions and how to assemble. So I started to assemble, partially through the build, I realized that I was using the wrong screws so I had to go back and fix it. The most fun part was assembling the wires for me, and the most challenging part was screwing the screws to make it. 
