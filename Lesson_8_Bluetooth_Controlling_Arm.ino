@@ -1,0 +1,396 @@
+#include <Servo.h>  // add the servo libraries
+#include <ezButton.h>
+ezButton button1(7);
+ezButton button2(8);
+Servo myservo1;  // create servo object to control a servo
+Servo myservo2;
+Servo myservo3;
+Servo myservo4;
+int pos1=90, pos2=0, pos3=0, pos4=90;  // define the variable of 4 servo angle and assign the initial value( that is the boot posture angle value)
+char val;
+int incomingByte = 0;          // Received data byte
+String inputString = "";         // Used to store received content
+boolean newLineReceived = false; // Previous data end flag
+boolean startBit  = false;  //Acceptance Agreement Start Sign
+int num_reveice=0;
+const int right_X = A2; // define the right X pin to A2
+const int right_Y = A5; // define the right Y pin to A5
+//const int right_key = 7; // define the right key pin to 7（that is the value of Z）
+const int left_X = A3; // define the left X pin to A3
+const int left_Y = A4; // define the left X pin to A4
+//const int left_key = 8; //define the left key pin to 8（that is the value of Z）
+int x1,y1,z1; // define the variable, used to save the joystick value it read.
+int x2,y2,z2;
+int bValue = 0;
+void setup()
+{
+   // boot posture
+  myservo1.write(pos1);  
+  delay(1000);
+  myservo2.write(pos2);
+  myservo3.write(pos3);
+  myservo4.write(pos4);
+  delay(1500);
+
+  Serial.begin(9600); //  set the baud rate to 9600
+  button1.setDebounceTime(50); // set debounce time to 50 milliseconds
+button2.setDebounceTime(50);// set the baud rate to 9600
+myservo1.attach(3); // set the control pin of servo 1 to D3  dizuo-servo1-3
+myservo2.attach(5); // set the control pin of servo 2 to D5  arm-servo2-5
+myservo3.attach(6); //set the control pin of servo 3 to D6   lower arm-servo-6
+myservo4.attach(9);
+}
+
+void loop() 
+{
+
+
+while (Serial.available())
+  {
+    incomingByte = Serial.read();              //One byte by byte, the next sentence is read into a string array to form a completed packet
+    if (incomingByte == '%')
+    {
+      num_reveice = 0;
+      startBit = true;
+    }
+    if (startBit == true)
+    {
+      num_reveice++;
+      inputString += (char) incomingByte;     
+    }
+    if (startBit == true && incomingByte == '#')
+    {
+      newLineReceived = true;
+      startBit = false;
+    }
+    
+    if(num_reveice >= 20)
+    {
+      num_reveice = 0;
+      startBit = false;
+      newLineReceived = false;
+      inputString = "";
+    }  
+  }
+
+
+
+if(newLineReceived)
+{
+    switch(inputString[1])   
+    {
+      case 'B':  T_left();  break;   // turn left
+      case 'C':  T_right();  break;//turn right 
+      case 'A':  RB();  break;// the lower arm will draw back 
+      case 'D':  RF();  break;// the lower arm will  stretch out
+      case '5':  ZK();  break;//close the claw
+      case '6':  ZB();  break;//close the claw
+      case '4':  LB();  break;//the upper arm will lift up 
+      case '7':  LF();  break;//the upper arm will go down 
+      default:break;
+    }
+
+      inputString = "";   // clear the string
+      newLineReceived = false;
+}
+  button1.loop(); // MUST call the loop() function first
+  button2.loop();
+int btn1State = button1.getState();
+int btn2State = button2.getState();// set the control pin of servo 4 to D9  claw-servo-9
+x2 = analogRead(right_X); //read the right X value
+y2 = analogRead(right_Y); // read the right Y value
+z2 = digitalRead(1); //// read the right Z value
+x1 = analogRead(left_X); //read the left X value
+y1 = analogRead(left_Y); //read the left Y value
+z1 = digitalRead(2); // read the left Z value
+//delay(5); // lower the speed overall
+
+// claw
+
+
+claw();
+// rotate
+turn();
+
+// upper arm
+upper_arm();
+
+//lower arm
+lower_arm();
+buttonpress();
+leftbutton();   
+   
+
+
+
+
+  
+}
+//**************************************************
+// turn left
+void T_left()
+{
+    pos1=pos1+8;
+    myservo1.write(pos1);
+    delay(5);
+    if(pos1>180)
+    {
+      pos1=180;
+    }
+}
+//turn right 
+void T_right()
+{
+    pos1=pos1-8;
+    myservo1.write(pos1);
+    delay(5);
+    if(pos1<1)
+    {
+      pos1=1;
+    }
+}
+//********************************************
+//close the claw
+
+void ZK()
+{
+      pos4=pos4-8;
+      Serial.println(pos4);
+      myservo4.write(pos4);
+      delay(5);
+      if(pos4<45)
+      {
+        pos4=45;
+      }
+}
+// open the claw
+void ZB()
+{
+    pos4=pos4+8;
+      Serial.println(pos4);
+      myservo4.write(pos4);
+      delay(5);
+      if(pos4>120)
+      {
+        pos4=120;
+      }
+}
+
+//******************************************
+// the lower arm will  stretch out
+void RF()
+{
+    pos2=pos2-8;
+    myservo2.write(pos2);
+    delay(5);
+    if(pos2<25)
+    {
+      pos2=25;
+    }
+}
+// the lower arm will draw back 
+void RB()
+{
+    pos2=pos2+8;
+    myservo2.write(pos2);
+    delay(5);
+    if(pos2>270)
+    {
+      pos2=270;
+    }
+}
+
+//***************************************
+//the upper arm will lift up  
+void LB()
+{
+  pos3=pos3+8;
+    myservo3.write(pos3);
+    delay(5);
+    if(pos3>135)
+    {
+      pos3=135;
+    }
+}
+
+//the upper arm will go down  
+
+void LF()
+{
+  pos3=pos3-8;
+    myservo3.write(pos3);
+    delay(5);
+    if(pos3<0)
+    {
+      pos3=0;
+    }
+}
+void leftbutton()
+{
+if (button2.isPressed()) {
+myservo1.detach();
+delay(100);
+myservo2.detach();
+delay(100);
+myservo3.detach();
+delay(100);
+myservo4.detach();
+delay(100);
+myservo1.attach(3);
+delay(100);
+myservo2.attach(5);
+delay(100);
+myservo3.attach(6);
+delay(100);
+myservo4.attach(9);
+myservo1.write(90);
+myservo2.write(0);
+myservo3.write(0);
+myservo4.write(90);
+}
+}
+void buttonpress()
+{
+if (button1.isPressed()) {
+myservo1.detach();
+delay(100);
+myservo2.detach();
+delay(100);
+myservo3.detach();
+delay(100);
+myservo4.detach();
+delay(100);
+myservo1.attach(9);
+delay(100);
+myservo2.attach(6);
+delay(100);
+myservo3.attach(5);
+delay(100);
+myservo4.attach(3);
+myservo1.write(90);
+myservo2.write(0);
+myservo3.write(0);
+myservo4.write(90);
+}
+}
+
+
+void claw()
+{
+//claw
+if(x1<50) // if push the left joystick to the right
+{
+pos4=pos4+3; 
+myservo4.write(pos4); //servo 4 operates the motion, the claw gradually opens. 
+delay(5);
+
+if(pos4>180) //limit the largest angle when open the claw 
+{
+pos4=180;
+}
+}
+
+if(x1>1000) ////if push the right joystick to the left 
+{
+pos4=pos4-3; 
+myservo4.write(pos4); // servo 4 operates the action, claw is gradually closed.
+delay(5);
+if(pos4<1) // 
+{
+pos4=1; //limit the largest angle when close the claw
+}
+
+}
+}
+
+
+
+//******************************************************/
+// turn
+void turn()
+{
+if(x2<50) //if push the right joystick to the let 
+{
+pos1=pos1+3; 
+myservo1.write(pos1); // arm turns left
+delay(5);
+if(pos1>180) //limit the angle when turn right 
+{
+pos1=180;
+}
+
+}
+
+if(x2>1000) // if push the right joystick to the right
+{
+pos1=pos1-3; 
+myservo1.write(pos1); //servo 1 operates the motion, the arm turns right. 
+delay(5);
+if(pos1<1) // limit the angle when turn left
+{
+pos1=1;
+}
+}
+}
+
+
+
+
+//**********************************************************/
+// lower arm
+void lower_arm()
+{
+if(y2>1000) // if push the right joystick downward
+{
+pos2=pos2-3;
+myservo2.write(pos2); // lower arm will draw back
+delay(5);
+if(pos2<25) // limit the retracted angle
+{
+pos2=25;
+}
+}
+
+if(y2<50) // if push the right joystick upward
+{
+pos2=pos2+3;
+myservo2.write(pos2); // lower arm will stretch out
+delay(5);
+if(pos2>180) // limit the stretched angle
+{
+pos2=180;
+}
+}
+}
+
+
+
+
+
+//*************************************************************/
+
+//upper arm
+void upper_arm()
+{
+if(y1<50) // if push the left joystick downward
+{
+pos3=pos3-3;
+myservo3.write(pos3); // upper arm will go down
+delay(5);
+if(pos3<1) //  limit the angle when go down 
+{
+pos3=1;
+}
+}
+if(y1>1000) // if push the left joystick upward
+{
+pos3=pos3+3;
+myservo3.write(pos3); // the upper arm will lift
+delay(5);
+
+if(pos3>135) //limit the lifting angle 
+{
+pos3=135;
+}
+}
+}
