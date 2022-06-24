@@ -1,6 +1,6 @@
 ﻿# Phone Controlled Robot Arm
-This will serve as a brief description of your project. Limit this to three sentences because it can become overly long at that point. This copy should draw the user in and make she/him want to read more.
-
+My project is a robot arm that I built. This robot arm is able to move around in many different ways to make it reach a point. This robot arm is very
+useful, because it can be used wirelessly from a bluetooth pin to make it easier to use and increase the range of the controller.
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
 | Devin Patel | Irvington High School | Software Engineering | Incoming Sophomore
