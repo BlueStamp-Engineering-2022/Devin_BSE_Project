@@ -13,8 +13,7 @@ My final milestone is the increased reliability and accuracy of my robot. I amel
 [![Final Milestone](https://res.cloudinary.com/marcomontalbano/image/upload/v1612573869/video_to_markdown/images/youtube--F7M7imOVGug-c05b58ac6eb4c4700831b2b3070cd403.jpg )](https://www.youtube.com/watch?v=F7M7imOVGug&feature=emb_logo "Final Milestone")
 
 # Second Milestone
-For my second milestone, I am using a bluetooth chip to connect my android phone to my robot arm. I had to upload some different code to the bot, but for some of it I had to change, because it didnt work the most efficient for my robot arm. I put in a block of wood at the base to hold up the upper arm; this has reverberating positive effects throughout the arm. I also realized that the forearm was getting disconnected from the elbow servo’s horn because of the weight stress on the joint. Now, I make sure to constantly tighten the screws at that joint.
-
+For my second milestone, I am using a bluetooth chip to connect my android phone to my robot arm. I had to upload some different code to the bot, but for some of it I had to change, because it didnt work the most efficient for my robot arm. I also adjusted some of my screws, because some of them were too tight and the arm couldn't move correctly. I also tightened some to make the screws such as the one that is holding the claw, because it was loose. 
 [![Second Milestone](https://img.youtube.com/vi/GEMIrw_fOAE/maxresdefault.jpg)](https://www.youtube.com/watch?v=GEMIrw_fOAE "Second Milestone")
 
 # First Milestone
