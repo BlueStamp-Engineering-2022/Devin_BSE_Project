@@ -3,7 +3,7 @@ The project that I have been building is a phone controlled robot arm. This robo
 useful, because it can be used wirelessly controlled using bluetooth.
 | **Engineer** | **School** | **Area of Interest** | **Grade** |
 |:--:|:--:|:--:|:--:|
-| Devin Patel | Irvington High School | Software Engineering | Incoming Sophomore
+| Devin Patel | Irvington High School | Computer Science | Incoming Sophomore
 
 ![Headstone Image](https://lh3.googleusercontent.com/pw/AM-JKLXHy7l92EenVF6TmY1S3o1XdQ5sxtAAb690L4F2ukvAbNMUkFQtrjVnKmvbgkX0qLdNRzwl2lzuqvXLLqjDpKZNYMZz9lvvr57GtRPHdTAgDmcpdet6MKMgA4EgKO_ABQRLI3q15VAyjKvYSkJ34830=s1578-no?authuser=0)
   
