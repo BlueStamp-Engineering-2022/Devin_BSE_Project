@@ -12,16 +12,16 @@ My final milestone is the increased reliability and accuracy of my robot. I amel
 
 [![Final Milestone](https://res.cloudinary.com/marcomontalbano/image/upload/v1612573869/video_to_markdown/images/youtube--F7M7imOVGug-c05b58ac6eb4c4700831b2b3070cd403.jpg )](https://www.youtube.com/watch?v=F7M7imOVGug&feature=emb_logo "Final Milestone")
 
-# Second Milestone
+# Second Milestone - Connecting it to a bluetooth device
 For my second milestone, I am using a bluetooth chip to connect my android phone to my robot arm. I had to upload some different code to the bot, but for some of it I had to change, because it didnt work the most efficient for my robot arm. I also adjusted some of my screws, because some of them were too tight and the arm couldn't move correctly. I also tightened some to make the screws such as the one that is holding the claw, because it was loose. 
 [![Second Milestone](https://img.youtube.com/vi/GEMIrw_fOAE/maxresdefault.jpg)](https://www.youtube.com/watch?v=GEMIrw_fOAE "Second Milestone")
 
-# First Milestone
-My first milestone was building and screwing in everypart of the robot arm. The screws were hard to screw in, because it was a nut that you had to screw them into. One thing I had to do was use one hand to hold the part and the wrench, one hand to hold the screwdriver. But first I searched up all of the instructions and how to assemble. So I started to assemble, partially through the build, I realized that I was using the wrong screws so I had to go back and fix it. The most fun part was assembling the wires for me, and the most challenging part was screwing the screws to make it. 
+# First Milestone- Building the Base 
+My first milestone was building and screwing in everypart of the robot arm. This was my start to my intensive project, to start I had to look for the instructions to build the device, but I had found the wront one multiple times. Then after 15 minutes I found the correct tutorial. So I started to assemble, partially through the build, I realized that I was using larger screws than I was supposed to, so what I did is I disassembled all of the progress that I had made and reassembled it. The most fun part was assembling the wires for me, and the most challenging part was screwing the screws to make it. But the hardest part of this project for me was to screw all the screws in, because I had to hold the wrench and component in one hand and hold the screwdriver and screw it in with the other hand. Overall, this project posed some challenges to me, but I got over them and finished with success.
 
 [![First Milestone](https://i3.ytimg.com/vi/zhDsSFFK8V4/maxresdefault.jpg)](https://www.youtube.com/watch?v=zhDsSFFK8V4 "First Milestone")
 
-# Starter Project
-My starter project was making a TV-B-Gone with this device you can rurn off almost any TV. first I read the instructions and learned how to solder. Then I followed the instructions, and started to solder each component one by one on to the chip. First I added the button, then the resisters, the lights, the chip, and the battery pack. All of these things weren't very difficult to solder, but they were time consuming. The hardest part of this for me was where I had to solder the wires of the battery pack so they didn't fray.
+# Starter Project - TV-B-Gone
+My starter project was making a TV-B-Gone with this device you can rurn off almost any TV. To prepare for this project, I found the instructions to build it, and I also learned how to solder componenets to a board. To start this project, I took all of the components out of the bag. one by one I soldered each pin of the components, and slowly it all came together. Most parts of the parts were easy to solder, but they were a lot of pins that I had to solder, and it took a long time. The hardest part of this prokect for me was to solder the battery pack in, because it took me a long time to not make the wires fray. This project, was very fun for me, and posed a decent challenge for me to get over. 
 
  [![Starter Project](https://i3.ytimg.com/vi/kWjVllD65a4/maxresdefault.jpg)](https://www.youtube.com/watch?v=kWjVllD65a4 "Starter Project")
